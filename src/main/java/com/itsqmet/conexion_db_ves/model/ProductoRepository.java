@@ -8,4 +8,8 @@ public interface ProductoRepository extends JpaRepository<Producto, Long> {
 
     List<Producto> findByCategoria(String categoria);
 
+    List<Producto> findByNombre(String nombre);
+
+    List<Producto> findByCategoriaAndPrecioLeesthanEqual(String categoria, Double precio);
+
 }
